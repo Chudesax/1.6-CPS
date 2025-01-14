@@ -1,0 +1,17 @@
+.header-brands {
+  min-width: 320px;
+  height: 56px;
+  border-top: 2px solid #d9fff5;
+  /* margin: 0 auto; */
+  background: #f8f8f8;
+}
+
+.header-brands__title {
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 80px;
+  padding: 0 16px 16px 16px;
+  font-size: 16px;
+  color: #7e7e82;
+  text-transform: uppercase;
+}

@@ -5,9 +5,23 @@
 @import './_m-header';
 @import './title';
 @import './navigation.scss';
-@import './main';
+@import './main.scss';
+@import './brands.scss';
 
 body {
   box-sizing: border-box;
   font-family: 'TT Lakes', serif, sans-serif;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.cps__main {
+  padding-bottom: 24px;
 }

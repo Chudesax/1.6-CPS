@@ -2,8 +2,44 @@
   padding: 0 16px 16px 16px;
 }
 
-.main__text {
-  font-size: 14px;
+.main__text,
+.main__text--hidden {
+  font-size: 13px;
   font-weight: 400;
   color: #1b1c21;
+  padding-bottom: 16px;
+  word-spacing: normal;
+}
+
+.main__more {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 8px;
+  padding-bottom: 16px;
+}
+
+.main__more::before {
+  content: '';
+  width: 8px;
+  height: 10px;
+  background: URL('../img/arrows.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.arrows__up::before {
+  content: '';
+  width: 8px;
+  height: 10px;
+  transform: rotate(180deg);
+  background: URL('../img/arrows.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 15px;
+  transition: 0.3s;
 }
