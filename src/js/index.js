@@ -33,16 +33,16 @@ mobileReadMore.addEventListener('click', function () {
 let list = document.querySelectorAll('.brands__item'); // Находим слайды
 console.log(list.length);
 
-let swiper;
+let swiper; // объявляем переменную свайпер
 
-const swiperActivator = function () {
-  if (window.innerWidth < 768) {
-    if (!swiper) {
+const swiperActivator = function () { // Объявляем функцию активации свайпера
+  if (window.innerWidth < 768) { // условие функции - срабатывает при экране меньше 768px
+    if (!swiper) { // если свайпера нет - создай. 
         swiper = new Swiper('.swiper', {
         direction: 'horizontal',
-        loop: false,
+        loop: true,
         slidesPerView: 1.5,
-        spaceBetween: 50,
+        spaceBetween: 10,
         breakpoints: {
           600: {
             slidesPerView: 2,
@@ -56,7 +56,7 @@ const swiperActivator = function () {
         },
       });
     }
-  } else {
+  } else { // экран больше 768px? уничтожай свайпер
     swiper.destroy(true, true);
     swiper = null; 
   }
@@ -64,7 +64,7 @@ const swiperActivator = function () {
 };
 
 
-window.addEventListener('resize', swiperActivator);
-swiperActivator();
+window.addEventListener('resize', swiperActivator); // Проверяем ширину экрана
+swiperActivator(); // Вызываем функцию активации свайпера
 
 /* -------------------------------------------------------  */

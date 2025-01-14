@@ -1,17 +1,17 @@
-.header-brands {
+.m-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 320px;
-  min-height: 56px;
+  min-height: 80px;
   border-top: 2px solid #d9fff5;
-  margin: 0 auto;
   background: #f8f8f8;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
-.header-brands__title {
-  height: 56px;
+.m-title__title {
   font-size: 16px;
   color: #7e7e82;
   text-transform: uppercase;
-  padding: 16px 16px 0 16px;
-  overflow: hidden;
+  padding: 16px;
 }
