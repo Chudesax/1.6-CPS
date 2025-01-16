@@ -1,6 +1,6 @@
 @import './_fonts';
 @import './reset.css';
-@import './_normalize.css';
+/* @import './_normalize.css'; */
 @import './_variables';
 @import './_mixins';
 @import './_m-header';
@@ -9,8 +9,8 @@
 @import './main.scss';
 @import './header-brands.scss';
 @import './brands.scss';
-@import './tech-types.scss';
-
+@import './types-of.scss';
+@import './common.scss';
 body {
   box-sizing: border-box;
   font-family: 'TT Lakes', serif, sans-serif;

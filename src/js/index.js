@@ -32,12 +32,14 @@ mobileReadMore.addEventListener('click', function () {
 
 let list = document.querySelectorAll('.brands__item') // Находим слайды
 console.log(list.length)
+let techTypesList = document.querySelectorAll('.tech-types__item') // Находим слайды
+console.log(techTypesList.length)
 
 let swiper // объявляем переменную свайпер
 
 const swiperActivator = function () {
   // Объявляем функцию активации свайпера
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 767) {
     // условие функции - срабатывает при экране меньше 768px
     if (!swiper) {
       // если снайпера нет - создай.
@@ -45,11 +47,23 @@ const swiperActivator = function () {
         direction: 'horizontal',
         loop: false,
         slidesPerView: 1.2,
-        spaceBetween: 15,
+        spaceBetween: 10,
         centeredSlides: true,
+        keyboard: {
+          enable: true,
+          onlyInViewPort: true
+        },
         breakpoints: {
           600: {
             slidesPerView: 2,
+            spaceBetween: 10
+          },
+          425: {
+            slidesPerView: 1.7,
+            spaceBetween: 10
+          },
+          375: {
+            slidesPerView: 1.5,
             spaceBetween: 10
           }
         },
@@ -61,49 +75,12 @@ const swiperActivator = function () {
       })
     }
   } else {
-    // экран не меньше 768px? уничтожай свайпер
     swiper.destroy(true, true)
     swiper = null
   }
 }
 
-window.addEventListener('resize', swiperActivator) // Проверяем ширину экрана
-swiperActivator() // Вызываем функцию активации свайпера
+window.addEventListener('resize', swiperActivator)
+swiperActivator()
 
 /* -------------------------------------------------------  */
-
-let techTypesList = document.querySelectorAll('.tech-types__item') // Находим слайды
-console.log(techTypesList.length)
-
-let swiperTT // объявляем переменную свайпер
-
-const swiperActivatorTwo = function () {
-  // Объявляем функцию активации свайпера
-  if (window.innerWidth < 768) {
-    // условие функции - срабатывает при экране меньше 768px
-    if (!swiperTT) {
-      // если свайпера нет - создай.
-      swiperTT = new Swiper('.swiper-tt', {
-        direction: 'horizontal',
-        loop: false,
-        spaceBetween: 15,
-        slidesPerView: 1,
-        centeredSlides: true,
-        pagination: {
-          el: '.swiper-pagination-tt',
-          type: 'bullets',
-          clickable: true
-        }
-      })
-    } else {
-      // экран не меньше 768px? уничтожай свайпер
-      swiper.destroy(true, true)
-      swiper = null
-    }
-  }
-}
-
-window.addEventListener('resize', swiperActivatorTwo) // Проверяем ширину экрана
-swiperActivatorTwo() // Вызываем функцию активации свайпера
-
-/* ------------------------------------------------------- */
