@@ -1,11 +1,11 @@
-.title {
+.main__title {
   color: #1b1c21;
   font-size: 28px;
   font-weight: 900;
   padding: 24px 16px 24px 0;
 }
 
-.title::before {
+.main__title::before {
   content: '';
   width: 4px;
   height: 40px;
