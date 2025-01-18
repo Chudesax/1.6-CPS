@@ -1,6 +1,5 @@
 import '../scss/style.scss'
 
-/* блок кода для кнопки читать далее в блоке main ------------ */
 
 let mobileReadMore = document.querySelector('.main__btn-more') // Находим кнопку Читать далее
 console.log(mobileReadMore)
@@ -26,14 +25,14 @@ mobileReadMore.addEventListener('click', function () {
   }
 })
 
-/* ----------------------------------------------------------------- */
-
-/* Активируем свайпер для блока brands ----------------------------- */
+/* -------------------------------------------------------------- */
 
 let list = document.querySelectorAll('.brands__item') // Находим слайды
 console.log(list.length)
 let techTypesList = document.querySelectorAll('.tech-types__item') // Находим слайды
 console.log(techTypesList.length)
+let pricesList = document.querySelectorAll('.prices__item');
+console.log(pricesList);
 
 let swiper // объявляем переменную свайпер
 
@@ -46,25 +45,25 @@ const swiperActivator = function () {
       swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: false,
-        slidesPerView: 1.2,
+        slidesPerView: 'auto',
         spaceBetween: 10,
-        centeredSlides: true,
+        centeredSlides: false,
         keyboard: {
           enable: true,
           onlyInViewPort: true
         },
         breakpoints: {
           600: {
-            slidesPerView: 2,
-            spaceBetween: 10
+            slidesPerView: 'auto',
+            spaceBetween: 20
           },
           425: {
-            slidesPerView: 1.7,
-            spaceBetween: 10
+            slidesPerView: 'auto',
+            spaceBetween: 20
           },
           375: {
-            slidesPerView: 1.5,
-            spaceBetween: 10
+            slidesPerView: 'auto',
+            spaceBetween: 20
           }
         },
         pagination: {
@@ -82,5 +81,3 @@ const swiperActivator = function () {
 
 window.addEventListener('resize', swiperActivator)
 swiperActivator()
-
-/* -------------------------------------------------------  */
