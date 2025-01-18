@@ -2,7 +2,7 @@ import '../scss/style.scss'
 
 /* блок кода для кнопки читать далее в блоке main ------------ */
 
-let mobileReadMore = document.querySelector('.main__more') // Находим кнопку Читать далее
+let mobileReadMore = document.querySelector('.main__btn-more') // Находим кнопку Читать далее
 console.log(mobileReadMore)
 let hiddenText = document.querySelector('.main__text--hidden') // Находим скрытый текст
 console.log(hiddenText)
