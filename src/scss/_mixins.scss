@@ -4,3 +4,31 @@
   border-radius: 50%;
   background: $mainColor;
 }
+
+@mixin btn {
+  background: #ff3e79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@mixin linker {
+  text-decoration: none;
+}
+
+@mixin divider {
+  background: #41f6d7;
+  width: 4px;
+  height: 32px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@mixin fsc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
