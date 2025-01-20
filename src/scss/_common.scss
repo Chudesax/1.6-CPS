@@ -1,5 +1,5 @@
 .title {
-  min-height: 308px;
+  //min-height: 308px;
   min-width: 320px;
   border-top: 1px solid #d9fff5;
 }
@@ -10,4 +10,8 @@
   color: #7e7e82;
   padding: 16px;
   background-color: rgb(252, 251, 250);
+}
+
+.swiper-wrapper {
+  margin-left: 16px;
 }

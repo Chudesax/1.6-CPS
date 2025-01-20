@@ -4,13 +4,13 @@
 @import './_variables';
 @import './_mixins';
 @import './_m-header';
-@import './title';
-@import './navigation.scss';
 @import './main.scss';
-@import './header-brands.scss';
 @import './brands.scss';
 @import './types-of.scss';
 @import './common.scss';
+@import './prices.scss';
+@import './footer.scss';
+
 body {
   box-sizing: border-box;
   font-family: 'TT Lakes', serif, sans-serif;
@@ -18,8 +18,4 @@ body {
 
 .hidden {
   display: none;
-}
-
-.cps__main {
-  padding-bottom: 24px;
 }

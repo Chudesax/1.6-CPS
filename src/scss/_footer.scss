@@ -1,0 +1,13 @@
+.footer {
+    color: #7E7E82;
+    font-size: 14px;
+    text-align: center;
+    white-space: pre-wrap;
+    border-top: 1px solid $tealColor;
+
+    &__paddings {
+        color: #7E7E82;
+        display: block;
+        padding-top: 16px;
+    }
+}
