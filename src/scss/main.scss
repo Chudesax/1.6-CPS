@@ -1,0 +1,51 @@
+@import './fonts';
+@import './reset';
+@import './variables';
+@import './animations';
+@import './normalize.css';
+
+@import './blocks/header';
+@import './blocks/button';
+@import './blocks/container';
+@import './blocks/mob-menu';
+@import './blocks/tablet-menu';
+@import './blocks/request-menu';
+@import './blocks/article';
+@import './blocks/main-request-menu';
+@import './blocks/main-nav';
+@import './blocks/textbox';
+@import './blocks/expand-button';
+@import './blocks/wrapper';
+@import './blocks/side-menu';
+@import './blocks/side-mob-menu';
+@import './blocks/side-nav';
+@import './blocks/contacts';
+@import './blocks/fog';
+@import './blocks/callback';
+@import './blocks/submit-button';
+@import './blocks/section';
+@import './blocks/section-title';
+@import './blocks/section-nav';
+@import './blocks/swiper';
+@import './blocks/footer';
+
+.body {
+  font-family: 'TT Lakes', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  height: auto;
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(90deg, #fff 50%, #f8f8f8 50%);
+  }
+  &--scroll {
+    overflow: hidden;
+  }
+}
+
+.main {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+}
