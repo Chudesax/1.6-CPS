@@ -569,7 +569,7 @@ button {
 .article__img {
   padding-top: 55%;
   width: 100%;
-  background: url(/src/img/CPS_img.jpg) no-repeat;
+  background: url(/src/img/go.svg) no-repeat;
   background-size: 100% auto;
   background-position: 0 45%; }
   @media (min-width: 768px) {
