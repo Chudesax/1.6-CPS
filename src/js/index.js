@@ -1,4 +1,4 @@
-import '../scss/main.scss'
+import '../scss/style.scss'
 
 /* Wrapper_open/close_buttons*/
 let body = document.querySelector('.body')
