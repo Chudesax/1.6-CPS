@@ -569,7 +569,8 @@ button {
 .article__img {
   padding-top: 55%;
   width: 100%;
-  background: url(/src/img/go.svg) no-repeat;
+  background-image: url(./static/CPS_img.jpg);
+  background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 0 45%; }
   @media (min-width: 768px) {
@@ -1129,7 +1130,7 @@ button {
     display: inline-block;
     height: 24px;
     width: 24px;
-    background: url("/src/img/more.svg") no-repeat;
+    background: url(./static/more.svg) no-repeat;
     vertical-align: bottom; }
   .section__get-offer-text {
     color: #1b1c21;
@@ -1260,7 +1261,7 @@ button {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background: url("/src/img/go.svg") no-repeat; }
+    background: url(./static/go.svg) no-repeat; }
     .section-nav__link--square {
       align-self: flex-end; }
   .section-nav__item {
